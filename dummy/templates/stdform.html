@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STDForm</title>
+</head>
+<body>
+
+<form action="" method="POST">
+{% csrf_token %}
+    Enter Name: <input type =text name="name" size="40" maxlength="40"><br>
+    Mobile: <input type =text name="mobile" size="40" maxlength="40"><br>
+    Mail: <input type =text name="mail" size="40" maxlength="40"><br>
+    Course: <input type = text name="course" size="100"><br>
+    <button>register</button>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+{% load static %}
+{%block content%}
+<html>
+<head>
+    <title>Form</title>
+     <link rel="stylesheet" type="text/css" href=" {% static 'sign.css' %} ">
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button>submit</button>
+</form>
+
+</body>
+
+</html>
+{% endblock %}

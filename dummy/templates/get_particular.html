@@ -1,0 +1,27 @@
+{% block content %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="get">
+    {% csrf_token %}
+    <table>
+        <tr>
+            <td>
+                {{record.name}}
+            </td>
+            <td>
+                {{record.mobile}}
+            </td>
+            <td>
+                {{record.email}}
+            </td>
+        </tr>
+    </table>
+
+</form>
+</body>
+</html>
+{% endblock %}
